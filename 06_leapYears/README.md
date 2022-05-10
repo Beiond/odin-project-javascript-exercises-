@@ -14,3 +14,22 @@ leapYears(1985) // is not a leap year: returns false
 
 ## Hints
 - use an `if` statement and `&&` to make sure all the conditions are met properly
+
+leapYears(year) {
+    if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
+        alert("is a leap year: returns true");
+    } else if (year % 4 == 0 && year % 100 != 0) {
+        alert("is a leap year: returns true");
+    } else if (year % 4 == 0 && year % 100 == 0) {
+        alert("is not a leap year: returns false");
+    } else {
+        alert("is a leap year");
+    }
+}
+
+
+if year is divisible by 4 && not divisible by 100 {return "is a leap year"}
+if year is divisible by 4 && divisible by 100 {return "is not a leap year"}
+if year is divisible by 4 && divisible by 100 && divisible by 400 {return "is a leap year"}
+
+
